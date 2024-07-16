@@ -1,0 +1,2 @@
+// I'm not sure but i think this is a single line agg
+db.school.count()

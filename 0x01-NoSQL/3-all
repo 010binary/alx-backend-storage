@@ -1,0 +1,2 @@
+// This is how to find all
+db.school.find()

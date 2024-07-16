@@ -1,0 +1,2 @@
+// This is how to insert without mongosh
+db.school.insert( { name: "Holberton school" } )

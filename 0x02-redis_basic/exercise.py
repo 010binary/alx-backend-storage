@@ -84,7 +84,7 @@ class Cache:
     """
     Represents an object for storing data in a Redis data storage.
 
-    This class provides methods to store data, retrieve data, and track method calls.
+    This class provides methods to store, retrieve data,track method calls.
     """
     def __init__(self) -> None:
         """Initializes a Cache instance."""
@@ -107,13 +107,14 @@ class Cache:
         self._redis.set(data_key, data)
         return data_key
 
-    def get(self, key: str, fn: Optional[Callable] = None) -> Union[str, bytes, int, float]:
+    def get(self, key: str,
+            fn: Optional[Callable] = None) -> Union[str, bytes, int, float]:
         """
         Retrieves a value from a Redis data storage.
 
         Args:
             key (str): The key of the data to retrieve.
-            fn (Optional[Callable], optional): The function to apply to the retrieved data. Defaults to None.
+            fn (Optio[Callable], opt): The def to apply to the retrieved data
 
         Returns:
             Union[str, bytes, int, float]: The retrieved data.
